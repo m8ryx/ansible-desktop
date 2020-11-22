@@ -4,3 +4,11 @@
   copy: src=files/sudoers_ansible dest=/etc/sudoers.d/ansible owner=root group=root mode=0440
 - name: create mortal user
   user: name={{username}}
+  groups:
+    - adm
+    - sambashare
+    - plugdev
+    - cdrom
+    - sudo
+  shell: /usr/bin/bash
+

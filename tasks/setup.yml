@@ -3,6 +3,8 @@
     repo: https://github.com/Bash-it/bash-it.git
     dest: /home/{{username}}/.bash_it
     depth: 1
+  become: yes
+  become_user: "{{username}}"
 - name: Install bash-it
   shell:
     cmd: /home/{{username}}/.bash_it/install.sh > bash_it.out 2>&1

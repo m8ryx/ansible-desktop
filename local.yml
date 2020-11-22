@@ -4,7 +4,7 @@
     - name: update repositories
       apt: update_cache=yes
     - name: upgrade apt
-      apt: upgrade=dist
+      apt: upgrade: dist
 
   tasks:
     - include: tasks/packages.yml

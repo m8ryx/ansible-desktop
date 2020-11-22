@@ -5,6 +5,6 @@
 - name: create mortal user
   user:
     name: "{{username}}"
-    groups: adm,sambashare,plugdev,cdrom,sudo
+    groups: adm,sambashare,plugdev,cdrom,sudo,lpadmin
     shell: /usr/bin/bash
 

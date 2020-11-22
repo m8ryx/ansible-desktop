@@ -1,4 +1,14 @@
 
 initial scripts based on https://opensource.com/article/18/3/manage-your-workstation-configuration-ansible-part-2
 
-sudo ansible-pull -U https://github.com/<github_user>/ansible.git
+### Instructions
+
+1. Install Ansible and git
+
+>>> sudo apt-get install ansible git
+
+2. Run ansible job
+
+>>> sudo ansible-pull -U https://github.com/m8ryx/ansible-desktop.git
+
+

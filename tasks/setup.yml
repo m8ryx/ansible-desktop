@@ -7,8 +7,8 @@
   shell:
     cmd: /home/{{username}}/.bash_it/install.sh > bash_it.out 2>&1
     chdir: /home/{{username}}
-    become: yes
-    become_user: "{{username}}"
+  become: yes
+  become_user: "{{username}}"
 - name: create working directory
   file:
     path: work

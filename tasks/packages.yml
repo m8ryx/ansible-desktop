@@ -1,10 +1,11 @@
 - name: Install packages
-  apt: name={{item}}
-  with_items:
-    apt: name=htop
-    apt: name=mc
-    apt: name=tmux
-    apt: name=i3
-    apt: name=neovim
+  community.general.apt_rpm:
+    pkg:
+      - htop
+      - mc
+      - tmux
+      - i3
+      - neovim
+    state: present
 
 

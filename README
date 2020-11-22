@@ -1,0 +1,4 @@
+
+initial scripts based on https://opensource.com/article/18/3/manage-your-workstation-configuration-ansible-part-2
+
+sudo ansible-pull -U https://github.com/<github_user>/ansible.git

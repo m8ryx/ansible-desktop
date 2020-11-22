@@ -1,13 +1,10 @@
-- hosts: localhost
-  become: true
-  tasks:
-    - name: Install packages
-      apt: name={{item}}
-      with_items:
-        apt: name=htop
-        apt: name=mc
-        apt: name=tmux
-        apt: name=i3
-        apt: name=neovim
-        
+- name: Install packages
+  apt: name={{item}}
+  with_items:
+    apt: name=htop
+    apt: name=mc
+    apt: name=tmux
+    apt: name=i3
+    apt: name=neovim
+
 

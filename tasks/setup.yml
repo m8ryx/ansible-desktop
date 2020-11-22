@@ -5,6 +5,15 @@
     depth: 1
 - name: Install bash-it
   shell:
-    cmd: sudo -u {{username}} /home/{{username}}/.bash_it/install.sh > bash_it.out 2>&1
+    cmd: /home/{{username}}/.bash_it/install.sh > bash_it.out 2>&1
     chdir: /home/{{username}}
+    become: yes
+    become_user: {{username}}
+- name: create working directory
+  file:
+    path: work
+    state: directory
+    owner: ansible
+
+    
 

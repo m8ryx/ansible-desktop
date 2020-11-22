@@ -1,0 +1,12 @@
+- name: Clone git-secrets
+  git:
+    repo: git@github.com:awslabs/git-secrets.git
+    dest: work/git-secrets
+- name: Install git-secrets
+  shell:
+    cmd: make install
+    chdir: work/git-secrets
+    become: yes
+    become_user: root
+
+

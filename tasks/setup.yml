@@ -3,3 +3,7 @@
     repo: https://github.com/Bash-it/bash-it.git
     dest: /home/{{username}}/.bash_it
     depth: 1
+  shell:
+    cmd: /home/"{{username}}"/.bash_it/install.sh --silent
+    chdir: /home/"{{username}}
+

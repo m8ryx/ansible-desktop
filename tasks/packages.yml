@@ -1,11 +1,10 @@
 - name: Install packages
-  community.general.apt_rpm:
+  apt:
     pkg:
       - htop
       - mc
       - tmux
       - i3
       - neovim
-    state: present
 
 

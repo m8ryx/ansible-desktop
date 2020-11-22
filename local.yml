@@ -3,7 +3,6 @@
   pre_tasks:
     - name: update repositories
       apt: update_cache=yes
-      change_when: False
 
   tasks:
     - include: tasks/packages.yml

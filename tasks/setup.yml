@@ -1,4 +1,5 @@
 - name: Install bash-it
   git:
-    repo: git clone --depth=1 https://github.com/Bash-it/bash-it.git ~/.bash_it
+    repo: https://github.com/Bash-it/bash-it.git ~/.bash_it
     dest: /home/{{username}}/.bash_it
+    depth: 1

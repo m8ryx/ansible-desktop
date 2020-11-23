@@ -7,7 +7,7 @@
   become_user: "{{username}}"
 - name: Install bash-it
   shell:
-    cmd: /home/{{username}}/.bash_it/install.sh > bash_it.out 2>&1
+    cmd: /home/{{username}}/.bash_it/install.sh -s > bash_it.out 2>&1
     chdir: /home/{{username}}
   become: yes
   become_user: "{{username}}"

@@ -7,4 +7,11 @@
     name: "{{username}}"
     groups: adm,sambashare,plugdev,cdrom,sudo,lpadmin
     shell: /usr/bin/bash
+- name: copy user sudoers template file
+  template:
+    src: templates/sudoer.j2
+    dest: /etc/sudoers.d/{{username}}
+    mode: 0440
+  become: yes
+  become_user: root
 

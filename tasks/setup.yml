@@ -16,6 +16,10 @@
     path: work
     state: directory
     owner: ansible
+- name: copy dotfiles
+  copy:
+    src: files/dotfiles/
+    dest: {{username}}/
+    owner: "{{username}}"
 
-    
 

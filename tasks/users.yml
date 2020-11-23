@@ -8,6 +8,15 @@
     name: "{{username}}"
     groups: adm,sambashare,plugdev,cdrom,sudo,lpadmin
     shell: /usr/bin/bash
+- name: copy ansible sudoers template file
+  template:
+    src: templates/sudoer.j2
+    dest: /etc/sudoers.d/ansible
+    mode: 0440
+    validate: /usr/sbin/visudo -cf %s
+    username: ansible
+  become: yes
+  become_user: root
 - name: copy user sudoers template file
   template:
     src: templates/sudoer.j2

@@ -6,5 +6,6 @@
       - tmux
       - i3
       - neovim
+      - make
 
 

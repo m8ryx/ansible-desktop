@@ -2,6 +2,7 @@
   user: name=ansible uid=900
 - name: copy ansible sudoers file
   copy: src=files/sudoers_ansible dest=/etc/sudoers.d/ansible owner=root group=root mode=0440
+    validate: /usr/sbin/visudo -cf %s
 - name: create mortal user
   user:
     name: "{{username}}"
@@ -12,6 +13,7 @@
     src: templates/sudoer.j2
     dest: /etc/sudoers.d/{{username}}
     mode: 0440
+    validate: /usr/sbin/visudo -cf %s
   become: yes
   become_user: root
 

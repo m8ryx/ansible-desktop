@@ -19,7 +19,9 @@
 - name: copy dotfiles
   copy:
     src: files/dotfiles/
-    dest: "{{username}}"/
+    dest: /home/{{username}}/
     owner: "{{username}}"
+  become: yes
+  become_user: "{{username}}"
 
 

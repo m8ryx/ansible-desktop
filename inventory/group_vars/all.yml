@@ -2,4 +2,4 @@
 
 username: m8ryx
 aws_region: us-west-2
-vpn_ip: "{{ lookup('aws_ssm', 'm8ryx.vpn_ip', region=hostvars[inventory_hostname]['aws_region'] }}"
+vpn_ip: "{{ lookup('aws_ssm', 'm8ryx.vpn_ip', region=hostvars[inventory_hostname]['aws_region']) }}"

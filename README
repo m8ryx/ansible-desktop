@@ -18,6 +18,6 @@ initial scripts based on https://opensource.com/article/18/3/manage-your-worksta
 Looking to add secrets management via AWS Secrets Manager to manage secure payloads like .aws/credentials, SSH creds, and more
 setup vpn client
 
-
+aws via apt breaks...pip?
 
 

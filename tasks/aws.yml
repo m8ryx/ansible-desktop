@@ -4,5 +4,6 @@
       - boto3
       - botocore
       - awscli
+      - docutils
 
 

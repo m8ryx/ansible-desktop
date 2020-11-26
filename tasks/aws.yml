@@ -1,9 +1,15 @@
-- name: Install AWS Python Packages
+- name: Install boto
   pip:
     name:
       - boto3
       - botocore
-      - awscli
-      - docutils
+- name: Install AWS Python Packages
+  pip:
+    name: awscli
+    state: latest
+- name: Install AWS Python Packages
+  pip:
+    name: docutils
+    state: latest
 
 

@@ -8,5 +8,6 @@
       - i3
       - neovim
       - make
+      - awscli
 
 

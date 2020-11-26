@@ -1,6 +1,7 @@
 - name: Install packages
   apt:
     pkg:
+      - python3-pip
       - htop
       - mc
       - tmux

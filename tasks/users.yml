@@ -23,4 +23,8 @@
     validate: /usr/sbin/visudo -cf %s
   become: yes
   become_user: root
-
+- name: copy variable test  template file
+  template:
+    src: templates/test.j2
+    dest: /tmp/test.txt
+    mode: 0666

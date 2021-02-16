@@ -8,5 +8,8 @@
       - i3
       - neovim
       - make
+      - xautomation
+      - xdotool
+      - xinput
 
 

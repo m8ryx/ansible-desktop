@@ -11,5 +11,15 @@
       - xautomation
       - xdotool
       - xinput
+      - ansible
+      - cowsay
+      - sshpass
+      - python-jinja2-doc
+      - python-lockfile-doc
+      - ipython3
+      - python-pyparsing-doc
+      - xclip
+      - xsel
+      - neovim
 
 

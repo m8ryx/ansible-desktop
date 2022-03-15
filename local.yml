@@ -12,6 +12,7 @@
   tasks:
     - include: tasks/packages.yml
     - include: tasks/aws.yml
+    - include: tasks/setup.yml
     - include: tasks/users.yml
     - include: tasks/cron.yml
     - include: tasks/dev.yml
